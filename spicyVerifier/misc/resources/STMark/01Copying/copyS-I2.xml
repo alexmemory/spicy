@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Source>  
+   <Protein>
+      <name>4CL 1</name>
+      <accession>Q42524</accession>
+      <created>2001-01-11</created>
+   </Protein>
+   <Protein>
+      <name>At4CL1</name>
+      <accession>Q42524</accession>
+      <created>2001-01-11</created>
+   </Protein>
+   <Protein>
+      <name>4-coumaroyl-CoA synthase 1</name>
+      <accession>Q42524</accession>
+      <created>2001-01-11</created>
+   </Protein>
+   <Protein>
+      <name>4-hydroxybenzoyl-CoA thioesterase</name>
+      <accession>P56653</accession>
+      <created>1999-07-15</created>
+   </Protein>
+   <Protein>
+      <name>5-hydroxytryptamine 1A-alpha receptor</name>
+      <accession>O42385</accession>
+      <created>2000-05-30</created>
+   </Protein>
+   <Protein>
+      <name>5-HT-1A-alpha</name>
+      <accession>O42385</accession>
+      <created>2000-05-30</created>
+   </Protein>
+   <Protein>
+      <name>Serotonin receptor 1A-alpha</name>
+      <accession>O42385</accession>
+      <created>2000-05-30</created>
+   </Protein>
+   <Protein>
+      <name>5-HT1A-alpha</name>
+      <accession>O42385</accession>
+      <created>2000-05-30</created>
+   </Protein>
+   <Protein>
+      <name>F1A</name>
+      <accession>O42385</accession>
+      <created>2000-05-30</created>
+   </Protein>
+   <Protein>
+      <name>5-hydroxytryptamine 1D receptor</name>
+      <accession>P28221</accession>
+      <created>1992-12-01</created>
+   </Protein>
+   <Protein>
+      <name>5-HT-1D</name>
+      <accession>P28221</accession>
+      <created>1992-12-01</created>
+   </Protein>
+   <Protein>
+      <name>Serotonin receptor 1D</name>
+      <accession>P28221</accession>
+      <created>1992-12-01</created>
+   </Protein>
+   <Protein>
+      <name>5-HT-1D-alpha</name>
+      <accession>P28221</accession>
+      <created>1992-12-01</created>
+   </Protein>
+   <Protein>
+      <name>5-hydroxytryptamine 2B receptor</name>
+      <accession>P30994</accession>
+      <created>1993-07-01</created>
+   </Protein>
+   <Protein>
+      <name>5-HT-2B</name>
+      <accession>P30994</accession>
+      <created>1993-07-01</created>
+   </Protein>
+   <Protein>
+      <name>Serotonin receptor 2B</name>
+      <accession>P30994</accession>
+      <created>1993-07-01</created>
+   </Protein>
+   <Protein>
+      <name>5-HT-2F</name>
+      <accession>P30994</accession>
+      <created>1993-07-01</created>
+   </Protein>
+   <Protein>
+      <name>Stomach fundus serotonin receptor</name>
+      <accession>P30994</accession>
+      <created>1993-07-01</created>
+   </Protein>
+   <Protein>
+      <name>5-hydroxytryptamine 1 receptor</name>
+      <accession>Q16950</accession>
+      <created>1997-11-01</created>
+   </Protein>
+   <Protein>
+      <name>5-HTB1</name>
+      <accession>Q16950</accession>
+      <created>1997-11-01</created>
+   </Protein>
+   <Protein>
+      <name>Serotonin receptor 1</name>
+      <accession>Q16950</accession>
+      <created>1997-11-01</created>
+   </Protein>
+   <Protein>
+      <name>65 kDa protein</name>
+      <accession>P15255</accession>
+      <created>1990-04-01</created>
+   </Protein>
+   <Protein>
+      <name>ORF 1</name>
+      <accession>P15255</accession>
+      <created>1990-04-01</created>
+   </Protein>
+   <Protein>
+      <name>6-phosphogluconate dehydrogenase, decarboxylating</name>
+      <accession>P41583</accession>
+      <created>1995-11-01</created>
+   </Protein>
+   <Protein>
+      <name>6-phosphogluconate dehydrogenase, decarboxylating</name>
+      <accession>Q8CP47</accession>
+      <created>2003-11-28</created>
+   </Protein>
+   <Protein>
+      <name>6-phosphogluconolactonase</name>
+      <accession>Q9Z8U5</accession>
+      <created>2000-05-30</created>
+   </Protein>
+   <Protein>
+      <name>6PGL</name>
+      <accession>Q9Z8U5</accession>
+      <created>2000-05-30</created>
+   </Protein>
+   <Protein>
+      <name>6-phosphogluconolactonase</name>
+      <accession>Q324C4</accession>
+      <created>2007-06-12</created>
+   </Protein>
+   <Protein>
+      <name>6-P-gluconolactonase</name>
+      <accession>Q324C4</accession>
+      <created>2007-06-12</created>
+   </Protein>
+   <Protein>
+      <name>Basic 7S globulin 2 precursor</name>
+      <accession>Q8RVH5</accession>
+      <created>2004-08-16</created>
+   </Protein>
+   <Protein>
+      <name>Bg</name>
+      <accession>Q8RVH5</accession>
+      <created>2004-08-16</created>
+   </Protein>
+   <Protein>
+      <name>SBg7S</name>
+      <accession>Q8RVH5</accession>
+      <created>2004-08-16</created>
+   </Protein>
+   <Protein>
+      <name>Alpha-1-acid glycoprotein precursor</name>
+      <accession>Q3SZR3</accession>
+      <created>2007-01-09</created>
+   </Protein>
+   <Protein>
+      <name>Orosomucoid</name>
+      <accession>Q3SZR3</accession>
+      <created>2007-01-09</created>
+   </Protein>
+   <Protein>
+      <name>OMD</name>
+      <accession>Q3SZR3</accession>
+      <created>2007-01-09</created>
+   </Protein>
+   <Protein>
+      <name>Alpha-1-antitrypsin precursor</name>
+      <accession>Q5RCW5</accession>
+      <created>2005-06-21</created>
+   </Protein>
+   <Protein>
+      <name>Alpha-1 protease inhibitor</name>
+      <accession>Q5RCW5</accession>
+      <created>2005-06-21</created>
+   </Protein>
+   <Protein>
+      <name>Alpha-1-antiproteinase</name>
+      <accession>Q5RCW5</accession>
+      <created>2005-06-21</created>
+   </Protein>
+   <Protein>
+      <name>Alpha-2-macroglobulin precursor</name>
+      <accession>Q61838</accession>
+      <created>1997-11-01</created>
+   </Protein>
+   <Protein>
+      <name>Pregnancy zone protein</name>
+      <accession>Q61838</accession>
+      <created>1997-11-01</created>
+   </Protein>
+   <Protein>
+      <name>Alpha-2-M</name>
+      <accession>Q61838</accession>
+      <created>1997-11-01</created>
+   </Protein>
+   <Protein>
+      <name>Amyloid beta A4 protein precursor</name>
+      <accession>P12023</accession>
+      <created>1989-10-01</created>
+   </Protein>
+   <Protein>
+      <name>APP</name>
+      <accession>P12023</accession>
+      <created>1989-10-01</created>
+   </Protein>
+   <Protein>
+      <name>ABPP</name>
+      <accession>P12023</accession>
+      <created>1989-10-01</created>
+   </Protein>
+   <Protein>
+      <name>Alzheimer disease amyloid protein homolog</name>
+      <accession>P12023</accession>
+      <created>1989-10-01</created>
+   </Protein>
+   <Protein>
+      <name>Amyloidogenic glycoprotein</name>
+      <accession>P12023</accession>
+      <created>1989-10-01</created>
+   </Protein>
+   <Protein>
+      <name>AG</name>
+      <accession>P12023</accession>
+      <created>1989-10-01</created>
+   </Protein>
+   <Protein>
+      <name>Antigen 85-B precursor</name>
+      <accession>A1KJU9</accession>
+      <created>2007-05-01</created>
+   </Protein>
+   <Protein>
+      <name>85B</name>
+      <accession>A1KJU9</accession>
+      <created>2007-05-01</created>
+   </Protein>
+   <Protein>
+      <name>Extracellular alpha-antigen</name>
+      <accession>A1KJU9</accession>
+      <created>2007-05-01</created>
+   </Protein>
+   <Protein>
+      <name>Antigen 85 complex B</name>
+      <accession>A1KJU9</accession>
+      <created>2007-05-01</created>
+   </Protein>
+   <Protein>
+      <name>Ag85B</name>
+      <accession>A1KJU9</accession>
+      <created>2007-05-01</created>
+   </Protein>
+   <Protein>
+      <name>Mycolyl transferase 85B</name>
+      <accession>A1KJU9</accession>
+      <created>2007-05-01</created>
+   </Protein>
+</Source>

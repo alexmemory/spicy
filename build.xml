@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="spicy" default="build">
+
+ <!-- ***************************************************
+            Importazione del template
+      *************************************************** -->
+
+    <target name="gfp-all" depends="" description="rigenera le proprieta' del progetto freeform">
+        <ant dir="jep-2.4.1" inheritAll="false" target="generate-freeform-properties" />    
+        <ant dir="spicyEngine" inheritAll="false" target="generate-freeform-properties" />  
+        <ant dir="spicyVerifier" inheritAll="false" target="generate-freeform-properties" />  
+    </target>
+	
+</project>

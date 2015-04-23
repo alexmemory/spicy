@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Source>
+   <Protein>
+      <name>12-alpha-hydroxysteroid dehydrogenase</name>
+      <accession>P21215</accession>
+      <created>1991-08-01</created>
+   </Protein>
+   <Protein>
+      <name>14-3-3 protein homolog 2</name>
+      <accession>Q8MM75</accession>
+      <created>2003-03-25</created>
+   </Protein>
+   <Protein>
+      <name>14-3-3-like protein A</name>
+      <accession>Q96450</accession>
+      <created>1998-07-15</created>
+   </Protein>
+   <Protein>
+      <name>SGF14A</name>
+      <accession>Q96450</accession>
+      <created>1998-07-15</created>
+   </Protein>
+   <Protein>
+      <name>14-3-3 protein eta</name>
+      <accession>P68510</accession>
+      <created>2004-11-23</created>
+   </Protein>
+   <Protein>
+      <name>14-3-3 protein zeta/delta</name>
+      <accession>P29361</accession>
+      <created>1992-12-01</created>
+   </Protein>
+   <Protein>
+      <name>Protein kinase C inhibitor protein 1</name>
+      <accession>P29361</accession>
+      <created>1992-12-01</created>
+   </Protein>
+   <Protein>
+      <name>KCIP-1</name>
+      <accession>P29361</accession>
+      <created>1992-12-01</created>
+   </Protein>
+   <Protein>
+      <name>14 kDa antigen</name>
+      <accession>P0A5B8</accession>
+      <created>2005-03-15</created>
+   </Protein>
+   <Protein>
+      <name>16 kDa antigen</name>
+      <accession>P0A5B8</accession>
+      <created>2005-03-15</created>
+   </Protein>
+   <Protein>
+      <name>HSP 16.3</name>
+      <accession>P0A5B8</accession>
+      <created>2005-03-15</created>
+   </Protein>
+   <Protein>
+      <name>Class I histocompatibility antigen, A alpha chain precursor</name>
+      <accession>P30515</accession>
+      <created>1993-04-01</created>
+   </Protein>
+   <Protein>
+      <name>1-aminocyclopropane-1-carboxylate synthase 9</name>
+      <accession>Q9M2Y8</accession>
+      <created>2004-07-19</created>
+   </Protein>
+   <Protein>
+      <name>ACC synthase 9</name>
+      <accession>Q9M2Y8</accession>
+      <created>2004-07-19</created>
+   </Protein>
+   <Protein>
+      <name>S-adenosyl-L-methionine methylthioadenosine-lyase 9</name>
+      <accession>Q9M2Y8</accession>
+      <created>2004-07-19</created>
+   </Protein>
+   <Protein>
+      <name>Ethylene-overproduction protein 3</name>
+      <accession>Q9M2Y8</accession>
+      <created>2004-07-19</created>
+   </Protein>
+   <Protein>
+      <name>HLA class I histocompatibility antigen, A-26 alpha chain precursor</name>
+      <accession>P30450</accession>
+      <created>1993-04-01</created>
+   </Protein>
+   <Protein>
+      <name>MHC class I antigen A*26</name>
+      <accession>P30450</accession>
+      <created>1993-04-01</created>
+   </Protein>
+   <Protein>
+      <name>HLA class I histocompatibility antigen, B-38 alpha chain precursor</name>
+      <accession>Q95365</accession>
+      <created>2003-08-22</created>
+   </Protein>
+   <Protein>
+      <name>MHC class I antigen B*38</name>
+      <accession>Q95365</accession>
+      <created>2003-08-22</created>
+   </Protein>
+   <Protein>
+      <name>Bw-4</name>
+      <accession>Q95365</accession>
+      <created>2003-08-22</created>
+   </Protein>
+   <Protein>
+      <name>Class I histocompatibility antigen, GOGO-C0201 alpha chain precursor</name>
+      <accession>P30385</accession>
+      <created>1993-04-01</created>
+   </Protein>
+   <Protein>
+      <name>Venom protein ANC29C0</name>
+      <accession>P84001</accession>
+      <created>2004-07-19</created>
+   </Protein>
+   <Protein>
+      <name>Serine/threonine-protein phosphatase 2A 65 kDa regulatory subunit A alpha isoform</name>
+      <accession>P54612</accession>
+      <created>1996-10-01</created>
+   </Protein>
+   <Protein>
+      <name>PP2A, subunit A, PR65-alpha isoform</name>
+      <accession>P54612</accession>
+      <created>1996-10-01</created>
+   </Protein>
+   <Protein>
+      <name>PP2A, subunit A, R1-alpha isoform</name>
+      <accession>P54612</accession>
+      <created>1996-10-01</created>
+   </Protein>
+   <Protein>
+      <name>Serine/threonine-protein phosphatase 2A 55 kDa regulatory subunit B beta isoform</name>
+      <accession>P36877</accession>
+      <created>1994-06-01</created>
+   </Protein>
+   <Protein>
+      <name>PP2A, subunit B, B-beta isoform</name>
+      <accession>P36877</accession>
+      <created>1994-06-01</created>
+   </Protein>
+   <Protein>
+      <name>PP2A, subunit B, B55-beta isoform</name>
+      <accession>P36877</accession>
+      <created>1994-06-01</created>
+   </Protein>
+   <Protein>
+      <name>PP2A, subunit B, PR55-beta isoform</name>
+      <accession>P36877</accession>
+      <created>1994-06-01</created>
+   </Protein>
+   <Protein>
+      <name>PP2A, subunit B, R2-beta isoform</name>
+      <accession>P36877</accession>
+      <created>1994-06-01</created>
+   </Protein>
+   <Protein>
+      <name>PP2A, subunit B, BRB isoform</name>
+      <accession>P36877</accession>
+      <created>1994-06-01</created>
+   </Protein>
+   <Protein>
+      <name>HLA class II histocompatibility antigen, DO beta chain precursor</name>
+      <accession>P13765</accession>
+      <created>1990-01-01</created>
+   </Protein>
+   <Protein>
+      <name>MHC class II antigen DOB</name>
+      <accession>P13765</accession>
+      <created>1990-01-01</created>
+   </Protein>
+   <Protein>
+      <name>2S albumin precursor</name>
+      <accession>Q39649</accession>
+      <created>2005-07-05</created>
+   </Protein>
+   <Protein>
+      <name>3 beta-hydroxysteroid dehydrogenase type 7</name>
+      <accession>O35048</accession>
+      <created>2006-09-05</created>
+   </Protein>
+   <Protein>
+      <name>3 beta-hydroxysteroid dehydrogenase type VII</name>
+      <accession>O35048</accession>
+      <created>2006-09-05</created>
+   </Protein>
+   <Protein>
+      <name>3-beta-HSD VII</name>
+      <accession>O35048</accession>
+      <created>2006-09-05</created>
+   </Protein>
+   <Protein>
+      <name>3-beta-hydroxy-Delta(5)-C27 steroid oxidoreductase</name>
+      <accession>O35048</accession>
+      <created>2006-09-05</created>
+   </Protein>
+   <Protein>
+      <name>C(27) 3-beta-HSD</name>
+      <accession>O35048</accession>
+      <created>2006-09-05</created>
+   </Protein>
+   <Protein>
+      <name>Confluent 3Y1 cell-associated 2</name>
+      <accession>O35048</accession>
+      <created>2006-09-05</created>
+   </Protein>
+   <Protein>
+      <name>3-hydroxyanthranilate 3,4-dioxygenase</name>
+      <accession>Q19341</accession>
+      <created>2006-07-11</created>
+   </Protein>
+   <Protein>
+      <name>3-HAO</name>
+      <accession>Q19341</accession>
+      <created>2006-07-11</created>
+   </Protein>
+   <Protein>
+      <name>3-hydroxyanthranilic acid dioxygenase</name>
+      <accession>Q19341</accession>
+      <created>2006-07-11</created>
+   </Protein>
+   <Protein>
+      <name>3-hydroxyanthranilate oxygenase</name>
+      <accession>Q19341</accession>
+      <created>2006-07-11</created>
+   </Protein>
+   <Protein>
+      <name>DNA-3-methyladenine glycosylase</name>
+      <accession>P37878</accession>
+      <created>1994-10-01</created>
+   </Protein>
+   <Protein>
+      <name>3-methyladenine-DNA glycosidase</name>
+      <accession>P37878</accession>
+      <created>1994-10-01</created>
+   </Protein>
+   <Protein>
+      <name>Putative 3-methyladenine DNA glycosylase</name>
+      <accession>Q18C13</accession>
+      <created>2006-12-12</created>
+   </Protein>
+   <Protein>
+      <name>Putative 3-methyladenine DNA glycosylase</name>
+      <accession>Q5X6N6</accession>
+      <created>2006-12-12</created>
+   </Protein>
+   <Protein>
+      <name>Putative 3-methyladenine DNA glycosylase</name>
+      <accession>Q2IW19</accession>
+      <created>2006-12-12</created>
+   </Protein>
+   <Protein>
+      <name>Putative 3-methyladenine DNA glycosylase</name>
+      <accession>Q2JI31</accession>
+      <created>2006-12-12</created>
+   </Protein>
+   <Protein>
+      <name>4-coumarate--CoA ligase 1</name>
+      <accession>Q42524</accession>
+      <created>2001-01-11</created>
+   </Protein>
+</Source>

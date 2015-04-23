@@ -1,0 +1,300 @@
+<?xml version="1.0"?>
+<Source>
+	<Reaction>
+		<entry>R00001</entry>
+		<name>Polyphosphate polyphosphohydrolase</name>
+		<definition>Polyphosphate + H2O gives Oligophosphate</definition>
+		<equation>C00890 + C00001 gives C02174</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00002</entry>
+		<name>Reduced ferredoxin:dinitrogen oxidoreductase (ATP-hydrolysing)</name>
+		<definition>16 ATP + 16 H2O gives 8 e- + 8 H+ + 16 Orthophosphate + 16 ADP</definition>
+		<equation>16 C00002 + 16 C00001 gives 8 C05359 + 8 C00080 + 16 C00009 + 16</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00004</entry>
+		<name>Pyrophosphate phosphohydrolase</name>
+		<definition>Pyrophosphate + H2O gives 2 Orthophosphate</definition>
+		<equation>C00013 + C00001 gives 2 C00009</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00005</entry>
+		<name>Urea-1-carboxylate amidohydrolase</name>
+		<definition>Urea-1-carboxylate + H2O gives 2 CO2 + 2 NH3</definition>
+		<equation>C01010 + C00001 gives 2 C00011 + 2 C00014</equation>
+		<comment>The yeast enzyme (but not that from green algae) also catalyses thereaction of EC 6.3.4.6 urea carboxylase, thus bringing about thehydrolysis of urea to CO2 and NH3 in the presence of ATP andbicarbonate.R00774 (6.3.4.6)</comment>
+		<orthology>KO: K01457 allophanate hydrolase</orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00006</entry>
+		<name>2-Acetolactate pyruvate-lyase (carboxylating)</name>
+		<definition>2-Acetolactate + CO2 gives 2 Pyruvate</definition>
+		<equation>C00900 + C00011 gives 2 C00022</equation>
+		<comment></comment>
+		<orthology>KO: K01651 acetolactate synthase</orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00008</entry>
+		<name>4-hydroxy-4-methyl-2-oxoglutarate pyruvate-lyase</name>
+		<definition>Parapyruvate gives 2 Pyruvate</definition>
+		<equation>C06033 gives 2 C00022</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00009</entry>
+		<name>hydrogen-peroxide:hydrogen-peroxide oxidoreductase</name>
+		<definition>2 H2O2 gives Oxygen + 2 H2O</definition>
+		<equation>2 C00027 gives C00007 + 2 C00001</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00010</entry>
+		<name>alpha,alpha-Trehalose glucohydrolase</name>
+		<definition>alpha,alpha-Trehalose + H2O gives 2 D-Glucose</definition>
+		<equation>C01083 + C00001 gives 2 C00031</equation>
+		<comment></comment>
+		<orthology>KO: K01194 alpha,alpha-trehalase</orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00011</entry>
+		<name>Mn(II):hydrogen-peroxide oxidoreductase</name>
+		<definition>2 Manganese + 2 H2O gives H2O2 + 2 Manganese + 2 H+</definition>
+		<equation>2 C00034 + 2 C00001 gives C00027 + 2 C00034 + 2 C00080</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00012</entry>
+		<name>GTP:GTP guanylyltransferase</name>
+		<definition>2 GTP gives Pyrophosphate + P1,P4-Bis(5'-guanosyl) tetraphosphate</definition>
+		<equation>2 C00044 gives C00013 + C01261</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00013</entry>
+		<name>Glyoxylate carboxy-lyase (dimerizing)</name>
+		<definition>2 Glyoxylate gives 2-Hydroxy-3-oxopropanoate + CO2</definition>
+		<equation>2 C00048 gives C01146 + C00011</equation>
+		<comment></comment>
+		<orthology>KO: K01608 tartronate-semialdehyde synthase</orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00014</entry>
+		<name>2-(alpha-Hydroxyethyl)thiamine diphosphate pyruvate-lyase</name>
+		<definition>2-(alpha-Hydroxyethyl)thiamine diphosphate + CO2 gives Thiamin</definition>
+		<equation>C05125 + C00011 gives C00068 + C00022</equation>
+		<comment>TPP-dependent enzymatic reaction (see R00224), subsequently R00755</comment>
+		<orthology>KO: K00160 pyruvate dehydrogenase</orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00015</entry>
+		<name>Sucrose:sucrose 1F-beta-D-fructosyltransferase</name>
+		<definition>2 Sucrose gives D-Glucose + 1F-beta-D-Fructosylsucrose</definition>
+		<equation>2 C00089 gives C00031 + C03661</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00016</entry>
+		<name>D-Glucose-1-phosphate:D-glucose-1-phosphate 6-phosphotransferase</name>
+		<definition>2 D-Glucose 1-phosphate gives D-Glucose + D-Glucose 1,6-bisphosphate</definition>
+		<equation>2 C00103 gives C00031 + C00660</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00017</entry>
+		<name>Ferrocytochrome-c:hydrogen-peroxide oxidoreductase</name>
+		<definition>H2O2 + 2 Ferrocytochrome c gives 2 Ferricytochrome c + 2 H2O</definition>
+		<equation>C00027 + 2 C00126 gives 2 C00125 + 2 C00001</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00018</entry>
+		<name>Putrescine:putrescine 4-aminobutyltransferase (ammonia-forming)</name>
+		<definition>2 Putrescine gives Homospermidine + NH3</definition>
+		<equation>2 C00134 gives C06366 + C00014</equation>
+		<comment>homospermidine synthase</comment>
+		<orthology>KO: K00808 homospermidine synthase</orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00019</entry>
+		<name>Reduced ferredoxin:H+ oxidoreductase</name>
+		<definition>2 Reduced ferredoxin + 2 H+ gives Hydrogen + 2 Oxidized ferredoxin</definition>
+		<equation>2 C00138 + 2 C00080 gives C00282 + 2 C00139</equation>
+		<comment></comment>
+		<orthology>KO: K00532 ferredoxin hydrogenase</orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00021</entry>
+		<name>L-Glutamate:ferredoxin oxidoreductase (transaminating)</name>
+		<definition>2 L-Glutamate + 2 Oxidized ferredoxin gives L-Glutamine +</definition>
+		<equation>2 C00025 + 2 C00139 gives C00064 + C00026 + 2 C00138</equation>
+		<comment></comment>
+		<orthology>KO: K00284 glutamate synthase (ferredoxin)</orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00022</entry>
+		<name></name>
+		<definition>Chitobiose + H2O gives 2 N-Acetyl-D-glucosamine</definition>
+		<equation>C01674 + C00001 gives 2 C00140</equation>
+		<comment></comment>
+		<orthology>KO: K01207 beta-N-acetylhexosaminidase</orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00023</entry>
+		<name>NADH:hyponitrite oxidoreductase</name>
+		<definition>2 Hydroxylamine + 2 NAD+ gives Hyponitrite + 2 NADH + 2 H+</definition>
+		<equation>2 C00192 + 2 C00003 gives C01818 + 2 C00004 + 2 C00080</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00024</entry>
+		<name>D-Ribulose 1,5-bisphosphate carboxy-lyase (dimerizing)</name>
+		<definition>D-Ribulose 1,5-bisphosphate + CO2 + H2O gives 2 3-Phospho-D-glycerate</definition>
+		<equation>C01182 + C00011 + C00001 gives 2 C00197</equation>
+		<comment></comment>
+		<orthology>KO: K01600 ribulose-bisphosphate carboxylase</orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00025</entry>
+		<name>2-Nitropropane:oxygen 2-oxidoreductase</name>
+		<definition>Oxygen + 2 2-Nitropropane gives 2 Acetone + 2 Nitrite</definition>
+		<equation>C00007 + 2 C02116 gives 2 C00207 + 2 C00088</equation>
+		<comment></comment>
+		<orthology>KO: K00459 2-nitropropane dioxygenase</orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00026</entry>
+		<name>beta-D-Glucoside glucohydrolase</name>
+		<definition>Cellobiose + H2O gives 2 beta-D-Glucose</definition>
+		<equation>C00185 + C00001 gives 2 C00221</equation>
+		<comment></comment>
+		<orthology>KO: K01188 beta-glucosidase</orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00027</entry>
+		<name>2-Hydroxy-1,2-diphenylethanone benzaldehyde-lyase</name>
+		<definition>Benzoin gives 2 Benzaldehyde</definition>
+		<equation>C01408 gives 2 C00261</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00028</entry>
+		<name>alpha-D-Glucoside glucohydrolase</name>
+		<definition>Maltose + H2O gives 2 alpha-D-Glucose</definition>
+		<equation>C00208 + C00001 gives 2 C00267</equation>
+		<comment></comment>
+		<orthology>KO: K01187 alpha-glucosidase</orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00029</entry>
+		<name>Thiosulfate:ferricytochrome-c oxidoreductase</name>
+		<definition>2 Thiosulfate + 2 Ferricytochrome c gives Tetrathionate + 2</definition>
+		<equation>2 C00320 + 2 C00125 gives C02084 + 2 C00126</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00031</entry>
+		<name>1,2-Benzenediol:oxygen oxidoreductase</name>
+		<definition>Oxygen + 2 L-Tyrosine gives 2 3,4-Dihydroxy-L-phenylalanine</definition>
+		<equation>C00007 + 2 C00082 gives 2 C00355</equation>
+		<comment></comment>
+		<orthology>KO: K00422 polyphenol oxidase</orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00032</entry>
+		<name>beta-Carotene:oxygen 15,15'-oxidoreductase (bond-cleaving)</name>
+		<definition>beta-Carotene + Oxygen gives 2 Retinal</definition>
+		<equation>C02094 + C00007 gives 2 C00376</equation>
+		<comment></comment>
+		<orthology>KO: K00515 beta-carotene 15,15'-monooxygenase</orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00033</entry>
+		<name>Thiamin:oxygen 5-oxidoreductase</name>
+		<definition>Thiamin + Oxygen gives H2O2 + Thiamine aldehyde</definition>
+		<equation>C00378 + C00007 gives C00027 + C05856</equation>
+		<comment>see R02132</comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00034</entry>
+		<name>Cyclobutadipyrimidine (in DNA) pyrimidine-lyase</name>
+		<definition>Cyclobutadipyrimidine gives 2 Pyrimidine 5'-deoxynucleotide</definition>
+		<equation>C03103 gives 2 C08249</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00035</entry>
+		<name>L-Ascorbate:oxygen oxidoreductase</name>
+		<definition>Oxygen + 2 Ascorbate gives 2 Dehydroascorbate + 2 H2O</definition>
+		<equation>C00007 + 2 C00072 gives 2 C00425 + 2 C00001</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00036</entry>
+		<name>5-Aminolevulinate hydro-lyase(adding 5-aminolevulinate and</name>
+		<definition>2 5-Aminolevulinate gives Porphobilinogen + 2 H2O</definition>
+		<equation>2 C00430 gives C00931 + 2 C00001</equation>
+		<comment></comment>
+		<orthology>KO: K01698 porphobilinogen synthase</orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00038</entry>
+		<name>4-Hydroxy-3-hexanone propanal-lyase</name>
+		<definition>2 Propanal gives 4-Hydroxyhexan-3-one</definition>
+		<equation>2 C00479 gives C02948</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+</Source>

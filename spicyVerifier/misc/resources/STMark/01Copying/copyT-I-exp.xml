@@ -1,0 +1,527 @@
+<Target>
+	<Protein>
+		<Name>12-alpha-hydroxysteroid dehydrogenase</Name>
+		<Accession>P21215</Accession>
+		<Created>1991-08-01</Created>
+	</Protein>
+	<Protein>
+		<Name>14-3-3 protein homolog 2</Name>
+		<Accession>Q8MM75</Accession>
+		<Created>2003-03-25</Created>
+	</Protein>
+	<Protein>
+		<Name>14-3-3-like protein A</Name>
+		<Accession>Q96450</Accession>
+		<Created>1998-07-15</Created>
+	</Protein>
+	<Protein>
+		<Name>SGF14A</Name>
+		<Accession>Q96450</Accession>
+		<Created>1998-07-15</Created>
+	</Protein>
+	<Protein>
+		<Name>14-3-3 protein eta</Name>
+		<Accession>P68510</Accession>
+		<Created>2004-11-23</Created>
+	</Protein>
+	<Protein>
+		<Name>14-3-3 protein zeta/delta</Name>
+		<Accession>P29361</Accession>
+		<Created>1992-12-01</Created>
+	</Protein>
+	<Protein>
+		<Name>Protein kinase C inhibitor protein 1</Name>
+		<Accession>P29361</Accession>
+		<Created>1992-12-01</Created>
+	</Protein>
+	<Protein>
+		<Name>KCIP-1</Name>
+		<Accession>P29361</Accession>
+		<Created>1992-12-01</Created>
+	</Protein>
+	<Protein>
+		<Name>14 kDa antigen</Name>
+		<Accession>P0A5B8</Accession>
+		<Created>2005-03-15</Created>
+	</Protein>
+	<Protein>
+		<Name>16 kDa antigen</Name>
+		<Accession>P0A5B8</Accession>
+		<Created>2005-03-15</Created>
+	</Protein>
+	<Protein>
+		<Name>HSP 16.3</Name>
+		<Accession>P0A5B8</Accession>
+		<Created>2005-03-15</Created>
+	</Protein>
+	<Protein>
+		<Name>Class I histocompatibility antigen, A alpha chain precursor</Name>
+		<Accession>P30515</Accession>
+		<Created>1993-04-01</Created>
+	</Protein>
+	<Protein>
+		<Name>1-aminocyclopropane-1-carboxylate synthase 9</Name>
+		<Accession>Q9M2Y8</Accession>
+		<Created>2004-07-19</Created>
+	</Protein>
+	<Protein>
+		<Name>ACC synthase 9</Name>
+		<Accession>Q9M2Y8</Accession>
+		<Created>2004-07-19</Created>
+	</Protein>
+	<Protein>
+		<Name>S-adenosyl-L-methionine methylthioadenosine-lyase 9</Name>
+		<Accession>Q9M2Y8</Accession>
+		<Created>2004-07-19</Created>
+	</Protein>
+	<Protein>
+		<Name>Ethylene-overproduction protein 3</Name>
+		<Accession>Q9M2Y8</Accession>
+		<Created>2004-07-19</Created>
+	</Protein>
+	<Protein>
+		<Name>HLA class I histocompatibility antigen, A-26 alpha chain precursor</Name>
+		<Accession>P30450</Accession>
+		<Created>1993-04-01</Created>
+	</Protein>
+	<Protein>
+		<Name>MHC class I antigen A*26</Name>
+		<Accession>P30450</Accession>
+		<Created>1993-04-01</Created>
+	</Protein>
+	<Protein>
+		<Name>HLA class I histocompatibility antigen, B-38 alpha chain precursor</Name>
+		<Accession>Q95365</Accession>
+		<Created>2003-08-22</Created>
+	</Protein>
+	<Protein>
+		<Name>MHC class I antigen B*38</Name>
+		<Accession>Q95365</Accession>
+		<Created>2003-08-22</Created>
+	</Protein>
+	<Protein>
+		<Name>Bw-4</Name>
+		<Accession>Q95365</Accession>
+		<Created>2003-08-22</Created>
+	</Protein>
+	<Protein>
+		<Name>Class I histocompatibility antigen, GOGO-C0201 alpha chain precursor</Name>
+		<Accession>P30385</Accession>
+		<Created>1993-04-01</Created>
+	</Protein>
+	<Protein>
+		<Name>Venom protein ANC29C0</Name>
+		<Accession>P84001</Accession>
+		<Created>2004-07-19</Created>
+	</Protein>
+	<Protein>
+		<Name>Serine/threonine-protein phosphatase 2A 65 kDa regulatory subunit A alpha isoform</Name>
+		<Accession>P54612</Accession>
+		<Created>1996-10-01</Created>
+	</Protein>
+	<Protein>
+		<Name>PP2A, subunit A, PR65-alpha isoform</Name>
+		<Accession>P54612</Accession>
+		<Created>1996-10-01</Created>
+	</Protein>
+	<Protein>
+		<Name>PP2A, subunit A, R1-alpha isoform</Name>
+		<Accession>P54612</Accession>
+		<Created>1996-10-01</Created>
+	</Protein>
+	<Protein>
+		<Name>Serine/threonine-protein phosphatase 2A 55 kDa regulatory subunit B beta isoform</Name>
+		<Accession>P36877</Accession>
+		<Created>1994-06-01</Created>
+	</Protein>
+	<Protein>
+		<Name>PP2A, subunit B, B-beta isoform</Name>
+		<Accession>P36877</Accession>
+		<Created>1994-06-01</Created>
+	</Protein>
+	<Protein>
+		<Name>PP2A, subunit B, B55-beta isoform</Name>
+		<Accession>P36877</Accession>
+		<Created>1994-06-01</Created>
+	</Protein>
+	<Protein>
+		<Name>PP2A, subunit B, PR55-beta isoform</Name>
+		<Accession>P36877</Accession>
+		<Created>1994-06-01</Created>
+	</Protein>
+	<Protein>
+		<Name>PP2A, subunit B, R2-beta isoform</Name>
+		<Accession>P36877</Accession>
+		<Created>1994-06-01</Created>
+	</Protein>
+	<Protein>
+		<Name>PP2A, subunit B, BRB isoform</Name>
+		<Accession>P36877</Accession>
+		<Created>1994-06-01</Created>
+	</Protein>
+	<Protein>
+		<Name>HLA class II histocompatibility antigen, DO beta chain precursor</Name>
+		<Accession>P13765</Accession>
+		<Created>1990-01-01</Created>
+	</Protein>
+	<Protein>
+		<Name>MHC class II antigen DOB</Name>
+		<Accession>P13765</Accession>
+		<Created>1990-01-01</Created>
+	</Protein>
+	<Protein>
+		<Name>2S albumin precursor</Name>
+		<Accession>Q39649</Accession>
+		<Created>2005-07-05</Created>
+	</Protein>
+	<Protein>
+		<Name>3 beta-hydroxysteroid dehydrogenase type 7</Name>
+		<Accession>O35048</Accession>
+		<Created>2006-09-05</Created>
+	</Protein>
+	<Protein>
+		<Name>3 beta-hydroxysteroid dehydrogenase type VII</Name>
+		<Accession>O35048</Accession>
+		<Created>2006-09-05</Created>
+	</Protein>
+	<Protein>
+		<Name>3-beta-HSD VII</Name>
+		<Accession>O35048</Accession>
+		<Created>2006-09-05</Created>
+	</Protein>
+	<Protein>
+		<Name>3-beta-hydroxy-Delta(5)-C27 steroid oxidoreductase</Name>
+		<Accession>O35048</Accession>
+		<Created>2006-09-05</Created>
+	</Protein>
+	<Protein>
+		<Name>C(27) 3-beta-HSD</Name>
+		<Accession>O35048</Accession>
+		<Created>2006-09-05</Created>
+	</Protein>
+	<Protein>
+		<Name>Confluent 3Y1 cell-associated 2</Name>
+		<Accession>O35048</Accession>
+		<Created>2006-09-05</Created>
+	</Protein>
+	<Protein>
+		<Name>3-hydroxyanthranilate 3,4-dioxygenase</Name>
+		<Accession>Q19341</Accession>
+		<Created>2006-07-11</Created>
+	</Protein>
+	<Protein>
+		<Name>3-HAO</Name>
+		<Accession>Q19341</Accession>
+		<Created>2006-07-11</Created>
+	</Protein>
+	<Protein>
+		<Name>3-hydroxyanthranilic acid dioxygenase</Name>
+		<Accession>Q19341</Accession>
+		<Created>2006-07-11</Created>
+	</Protein>
+	<Protein>
+		<Name>3-hydroxyanthranilate oxygenase</Name>
+		<Accession>Q19341</Accession>
+		<Created>2006-07-11</Created>
+	</Protein>
+	<Protein>
+		<Name>DNA-3-methyladenine glycosylase</Name>
+		<Accession>P37878</Accession>
+		<Created>1994-10-01</Created>
+	</Protein>
+	<Protein>
+		<Name>3-methyladenine-DNA glycosidase</Name>
+		<Accession>P37878</Accession>
+		<Created>1994-10-01</Created>
+	</Protein>
+	<Protein>
+		<Name>Putative 3-methyladenine DNA glycosylase</Name>
+		<Accession>Q18C13</Accession>
+		<Created>2006-12-12</Created>
+	</Protein>
+	<Protein>
+		<Name>Putative 3-methyladenine DNA glycosylase</Name>
+		<Accession>Q5X6N6</Accession>
+		<Created>2006-12-12</Created>
+	</Protein>
+	<Protein>
+		<Name>Putative 3-methyladenine DNA glycosylase</Name>
+		<Accession>Q2IW19</Accession>
+		<Created>2006-12-12</Created>
+	</Protein>
+	<Protein>
+		<Name>Putative 3-methyladenine DNA glycosylase</Name>
+		<Accession>Q2JI31</Accession>
+		<Created>2006-12-12</Created>
+	</Protein>
+	<Protein>
+		<Name>4-coumarate--CoA ligase 1</Name>
+		<Accession>Q42524</Accession>
+		<Created>2001-01-11</Created>
+	</Protein>
+	<Protein>
+		<Name>4CL 1</Name>
+		<Accession>Q42524</Accession>
+		<Created>2001-01-11</Created>
+	</Protein>
+	<Protein>
+		<Name>At4CL1</Name>
+		<Accession>Q42524</Accession>
+		<Created>2001-01-11</Created>
+	</Protein>
+	<Protein>
+		<Name>4-coumaroyl-CoA synthase 1</Name>
+		<Accession>Q42524</Accession>
+		<Created>2001-01-11</Created>
+	</Protein>
+	<Protein>
+		<Name>4-hydroxybenzoyl-CoA thioesterase</Name>
+		<Accession>P56653</Accession>
+		<Created>1999-07-15</Created>
+	</Protein>
+	<Protein>
+		<Name>5-hydroxytryptamine 1A-alpha receptor</Name>
+		<Accession>O42385</Accession>
+		<Created>2000-05-30</Created>
+	</Protein>
+	<Protein>
+		<Name>5-HT-1A-alpha</Name>
+		<Accession>O42385</Accession>
+		<Created>2000-05-30</Created>
+	</Protein>
+	<Protein>
+		<Name>Serotonin receptor 1A-alpha</Name>
+		<Accession>O42385</Accession>
+		<Created>2000-05-30</Created>
+	</Protein>
+	<Protein>
+		<Name>5-HT1A-alpha</Name>
+		<Accession>O42385</Accession>
+		<Created>2000-05-30</Created>
+	</Protein>
+	<Protein>
+		<Name>F1A</Name>
+		<Accession>O42385</Accession>
+		<Created>2000-05-30</Created>
+	</Protein>
+	<Protein>
+		<Name>5-hydroxytryptamine 1D receptor</Name>
+		<Accession>P28221</Accession>
+		<Created>1992-12-01</Created>
+	</Protein>
+	<Protein>
+		<Name>5-HT-1D</Name>
+		<Accession>P28221</Accession>
+		<Created>1992-12-01</Created>
+	</Protein>
+	<Protein>
+		<Name>Serotonin receptor 1D</Name>
+		<Accession>P28221</Accession>
+		<Created>1992-12-01</Created>
+	</Protein>
+	<Protein>
+		<Name>5-HT-1D-alpha</Name>
+		<Accession>P28221</Accession>
+		<Created>1992-12-01</Created>
+	</Protein>
+	<Protein>
+		<Name>5-hydroxytryptamine 2B receptor</Name>
+		<Accession>P30994</Accession>
+		<Created>1993-07-01</Created>
+	</Protein>
+	<Protein>
+		<Name>5-HT-2B</Name>
+		<Accession>P30994</Accession>
+		<Created>1993-07-01</Created>
+	</Protein>
+	<Protein>
+		<Name>Serotonin receptor 2B</Name>
+		<Accession>P30994</Accession>
+		<Created>1993-07-01</Created>
+	</Protein>
+	<Protein>
+		<Name>5-HT-2F</Name>
+		<Accession>P30994</Accession>
+		<Created>1993-07-01</Created>
+	</Protein>
+	<Protein>
+		<Name>Stomach fundus serotonin receptor</Name>
+		<Accession>P30994</Accession>
+		<Created>1993-07-01</Created>
+	</Protein>
+	<Protein>
+		<Name>5-hydroxytryptamine 1 receptor</Name>
+		<Accession>Q16950</Accession>
+		<Created>1997-11-01</Created>
+	</Protein>
+	<Protein>
+		<Name>5-HTB1</Name>
+		<Accession>Q16950</Accession>
+		<Created>1997-11-01</Created>
+	</Protein>
+	<Protein>
+		<Name>Serotonin receptor 1</Name>
+		<Accession>Q16950</Accession>
+		<Created>1997-11-01</Created>
+	</Protein>
+	<Protein>
+		<Name>65 kDa protein</Name>
+		<Accession>P15255</Accession>
+		<Created>1990-04-01</Created>
+	</Protein>
+	<Protein>
+		<Name>ORF 1</Name>
+		<Accession>P15255</Accession>
+		<Created>1990-04-01</Created>
+	</Protein>
+	<Protein>
+		<Name>6-phosphogluconate dehydrogenase, decarboxylating</Name>
+		<Accession>P41583</Accession>
+		<Created>1995-11-01</Created>
+	</Protein>
+	<Protein>
+		<Name>6-phosphogluconate dehydrogenase, decarboxylating</Name>
+		<Accession>Q8CP47</Accession>
+		<Created>2003-11-28</Created>
+	</Protein>
+	<Protein>
+		<Name>6-phosphogluconolactonase</Name>
+		<Accession>Q9Z8U5</Accession>
+		<Created>2000-05-30</Created>
+	</Protein>
+	<Protein>
+		<Name>6PGL</Name>
+		<Accession>Q9Z8U5</Accession>
+		<Created>2000-05-30</Created>
+	</Protein>
+	<Protein>
+		<Name>6-phosphogluconolactonase</Name>
+		<Accession>Q324C4</Accession>
+		<Created>2007-06-12</Created>
+	</Protein>
+	<Protein>
+		<Name>6-P-gluconolactonase</Name>
+		<Accession>Q324C4</Accession>
+		<Created>2007-06-12</Created>
+	</Protein>
+	<Protein>
+		<Name>Basic 7S globulin 2 precursor</Name>
+		<Accession>Q8RVH5</Accession>
+		<Created>2004-08-16</Created>
+	</Protein>
+	<Protein>
+		<Name>Bg</Name>
+		<Accession>Q8RVH5</Accession>
+		<Created>2004-08-16</Created>
+	</Protein>
+	<Protein>
+		<Name>SBg7S</Name>
+		<Accession>Q8RVH5</Accession>
+		<Created>2004-08-16</Created>
+	</Protein>
+	<Protein>
+		<Name>Alpha-1-acid glycoprotein precursor</Name>
+		<Accession>Q3SZR3</Accession>
+		<Created>2007-01-09</Created>
+	</Protein>
+	<Protein>
+		<Name>Orosomucoid</Name>
+		<Accession>Q3SZR3</Accession>
+		<Created>2007-01-09</Created>
+	</Protein>
+	<Protein>
+		<Name>OMD</Name>
+		<Accession>Q3SZR3</Accession>
+		<Created>2007-01-09</Created>
+	</Protein>
+	<Protein>
+		<Name>Alpha-1-antitrypsin precursor</Name>
+		<Accession>Q5RCW5</Accession>
+		<Created>2005-06-21</Created>
+	</Protein>
+	<Protein>
+		<Name>Alpha-1 protease inhibitor</Name>
+		<Accession>Q5RCW5</Accession>
+		<Created>2005-06-21</Created>
+	</Protein>
+	<Protein>
+		<Name>Alpha-1-antiproteinase</Name>
+		<Accession>Q5RCW5</Accession>
+		<Created>2005-06-21</Created>
+	</Protein>
+	<Protein>
+		<Name>Alpha-2-macroglobulin precursor</Name>
+		<Accession>Q61838</Accession>
+		<Created>1997-11-01</Created>
+	</Protein>
+	<Protein>
+		<Name>Pregnancy zone protein</Name>
+		<Accession>Q61838</Accession>
+		<Created>1997-11-01</Created>
+	</Protein>
+	<Protein>
+		<Name>Alpha-2-M</Name>
+		<Accession>Q61838</Accession>
+		<Created>1997-11-01</Created>
+	</Protein>
+	<Protein>
+		<Name>Amyloid beta A4 protein precursor</Name>
+		<Accession>P12023</Accession>
+		<Created>1989-10-01</Created>
+	</Protein>
+	<Protein>
+		<Name>APP</Name>
+		<Accession>P12023</Accession>
+		<Created>1989-10-01</Created>
+	</Protein>
+	<Protein>
+		<Name>ABPP</Name>
+		<Accession>P12023</Accession>
+		<Created>1989-10-01</Created>
+	</Protein>
+	<Protein>
+		<Name>Alzheimer disease amyloid protein homolog</Name>
+		<Accession>P12023</Accession>
+		<Created>1989-10-01</Created>
+	</Protein>
+	<Protein>
+		<Name>Amyloidogenic glycoprotein</Name>
+		<Accession>P12023</Accession>
+		<Created>1989-10-01</Created>
+	</Protein>
+	<Protein>
+		<Name>AG</Name>
+		<Accession>P12023</Accession>
+		<Created>1989-10-01</Created>
+	</Protein>
+	<Protein>
+		<Name>Antigen 85-B precursor</Name>
+		<Accession>A1KJU9</Accession>
+		<Created>2007-05-01</Created>
+	</Protein>
+	<Protein>
+		<Name>85B</Name>
+		<Accession>A1KJU9</Accession>
+		<Created>2007-05-01</Created>
+	</Protein>
+	<Protein>
+		<Name>Extracellular alpha-antigen</Name>
+		<Accession>A1KJU9</Accession>
+		<Created>2007-05-01</Created>
+	</Protein>
+	<Protein>
+		<Name>Antigen 85 complex B</Name>
+		<Accession>A1KJU9</Accession>
+		<Created>2007-05-01</Created>
+	</Protein>
+	<Protein>
+		<Name>Ag85B</Name>
+		<Accession>A1KJU9</Accession>
+		<Created>2007-05-01</Created>
+	</Protein>
+	<Protein>
+		<Name>Mycolyl transferase 85B</Name>
+		<Accession>A1KJU9</Accession>
+		<Created>2007-05-01</Created>
+	</Protein>
+</Target>

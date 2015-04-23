@@ -1,0 +1,300 @@
+<?xml version="1.0"?>
+<Source>	
+	<Reaction>
+		<entry>R00039</entry>
+		<name>Raffinose:raffinose alpha-D-galactosyltransferase</name>
+		<definition>2 Raffinose gives 1F-alpha-D-Galactosylraffinose + Sucrose</definition>
+		<equation>2 C00492 gives C03971 + C00089</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00040</entry>
+		<name>Choline:oxygen 1-oxidoreductase</name>
+		<definition>Oxygen + 2 Choline gives 2 Betaine aldehyde + 2 H2O</definition>
+		<equation>C00007 + 2 C00114 gives 2 C00576 + 2 C00001</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00041</entry>
+		<name>Long-chain-alcohol:oxygen oxidoreductase</name>
+		<definition>2 Long-chain alcohol + Oxygen gives 2 Long-chain aldehyde + 2 H2O</definition>
+		<equation>2 C00339 + C00007 gives 2 C00609 + 2 C00001</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00042</entry>
+		<name>4-Hydroxyphenylpyruvate:oxygen oxidoreductase (decarboxylating)</name>
+		<definition>2 3-(4-Hydroxyphenyl)pyruvate + Oxygen gives 2 4-Hydroxyphenylacetate</definition>
+		<equation>2 C01179 + C00007 gives 2 C00642 + 2 C00011</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00043</entry>
+		<name>1,2-Bis(4-hydroxy-3-methoxyphenyl)ethylene:oxygen oxidoreductase</name>
+		<definition>1,2-Bis(4-hydroxy-3-methoxyphenyl)ethylene + Oxygen gives 2</definition>
+		<equation>C04547 + C00007 gives 2 C00755</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00044</entry>
+		<name>Columbamine:oxygen oxidoreductase (cyclizing)</name>
+		<definition>2 Columbamine + Oxygen gives 2 Berberine + 2 H2O</definition>
+		<equation>2 C01795 + C00007 gives 2 C00757 + 2 C00001</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00045</entry>
+		<name>1,2-Benzenediol:oxygen oxidoreductase</name>
+		<definition>Oxygen + 2 3,4-Dihydroxy-L-phenylalanine gives 2 Dopaquinone + 2 H2O</definition>
+		<equation>C00007 + 2 C00355 gives 2 C00822 + 2 C00001</equation>
+		<comment></comment>
+		<orthology>KO: K00422 polyphenol oxidase</orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00047</entry>
+		<name>6-Hydroxynicotinate, hydrogen-donor:oxygen oxidoreductase</name>
+		<definition>Oxygen + 2 6-Hydroxynicotinate gives 2 2,5-Dihydroxypyridine + 2 CO2</definition>
+		<equation>C00007 + 2 C01020 gives 2 C01059 + 2 C00011</equation>
+		<comment></comment>
+		<orthology>KO: K00516 fatty acid desaturase</orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00048</entry>
+		<name>(R)-3-((R)-3-Hydroxybutanoyloxy)-butanoate hydroxybutanoylhydrolase</name>
+		<definition>(R)-3-((R)-3-Hydroxybutanoyloxy)butanoate + H2O gives 2</definition>
+		<equation>C04546 + C00001 gives 2 C01089</equation>
+		<comment></comment>
+		<orthology>KO: K07518 hydroxybutyrate-dimer hydrolase</orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00049</entry>
+		<name>1-O-Galloyl-beta-D-glucose:1-O-galloyl-beta-D-glucose</name>
+		<definition>2 1-O-Galloyl-beta-D-glucose gives D-Glucose +</definition>
+		<equation>2 C01158 gives C00031 + C04101</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00052</entry>
+		<name>Chloride:hydrogen-peroxide oxidoreductase</name>
+		<definition>H2O2 + 2 Alkane + 2 Cl- gives 2 RCl + 2 H2O</definition>
+		<equation>C00027 + 2 C01371 + 2 C00698 gives 2 C01334 + 2 C00001</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00053</entry>
+		<name>Tannin acylhydrolase</name>
+		<definition>Digallate + H2O gives 2 Gallate</definition>
+		<equation>C01572 + C00001 gives 2 C01424</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00054</entry>
+		<name>Orsellinate-depside hydrolase</name>
+		<definition>Orsellinate depside + H2O gives 2 Orsellinate</definition>
+		<equation>C02868 + C00001 gives 2 C01839</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00055</entry>
+		<name>Nucleoside:oxygen 5'-oxidoreductase</name>
+		<definition>2 Inosine + Oxygen gives 2 5'-Oxoinosine + 2 H2O</definition>
+		<equation>2 C00294 + C00007 gives 2 C01993 + 2 C00001</equation>
+		<comment>second step reaction of R00055see R05822</comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00056</entry>
+		<name>Dinucleotide nucleotidohydrolase</name>
+		<definition>Dinucleotide + H2O gives 2 Mononucleotide</definition>
+		<equation>C01910 + C00001 gives 2 C02171</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00057</entry>
+		<name>Thiol:oxygen oxidoreductase</name>
+		<definition>Oxygen + 4 R'C(R)SH gives 2 R'C(R)S-S(R)CR' + 2 H2O</definition>
+		<equation>C00007 + 4 C01525 gives 2 C02318 + 2 C00001</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00058</entry>
+		<name>1,2-Benzenediol:oxygen oxidoreductase</name>
+		<definition>Oxygen + 2 Catechol gives 2 1,2-Benzoquinone + 2 H2O</definition>
+		<equation>C00007 + 2 C00090 gives 2 C02351 + 2 C00001</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00059</entry>
+		<name>N-(6-Aminohexanoyl)-6-aminohexanoate amidohydrolase</name>
+		<definition>N-(6-Aminohexanoyl)-6-aminohexanoate + H2O gives 2 6-Aminohexanoate</definition>
+		<equation>C01255 + C00001 gives 2 C02378</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00060</entry>
+		<name>Sulochrin:oxygen oxidoreductase (cyclizing, (+)-specific)</name>
+		<definition>Oxygen + 2 Sulochrin gives 2 (+)-Bisdechlorogeodin + 2 H2O</definition>
+		<equation>C00007 + 2 C00495 gives 2 C03036 + 2 C00001</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00061</entry>
+		<name>Sulochrin:oxygen oxidoreductase (cyclizing, (-)-specific)</name>
+		<definition>Oxygen + 2 Sulochrin gives 2 (-)-Bisdechlorogeodin + 2 H2O</definition>
+		<equation>C00007 + 2 C00495 gives 2 C03040 + 2 C00001</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00062</entry>
+		<name>Bilirubin-glucuronoside:bilirubin-glucuronoside</name>
+		<definition>2 Bilirubin-glucuronoside gives Bilirubin + Bilirubin</definition>
+		<equation>2 C03374 gives C00486 + C05787</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00063</entry>
+		<name>1-O-(4-Hydroxy-3,5-dimethoxycinnamoyl)-beta-D-glucoside:1-O-(4-</name>
+		<definition>2 1-O-Sinapoyl beta-D-glucoside gives</definition>
+		<equation>2 C03915 gives C04275 + C00031</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00064</entry>
+		<name>4-(4-Deoxy-beta-D-gluc-4-enuronosyl)-D-galacturonate lyase</name>
+		<definition>4-(4-Deoxy-beta-D-gluc-4-enuronosyl)-D-galacturonate gives 2</definition>
+		<equation>C04733 gives 2 C04053</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00066</entry>
+		<name>6,7-Dimethyl-8-(1-D-ribityl)lumazine:6,7-dimethyl-8-(1-D-ribityl)</name>
+		<definition>2 6,7-Dimethyl-8-(1-D-ribityl)lumazine gives Riboflavin +</definition>
+		<equation>2 C04332 gives C00255 + C04732</equation>
+		<comment></comment>
+		<orthology>KO: K00793 riboflavin synthase alpha chain</orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00067</entry>
+		<name>Reduced ferredoxin:dinitrogen oxidoreductase (ATP-hydrolysing)</name>
+		<definition>2 e- + 2 H+ gives Hydrogen</definition>
+		<equation>2 C05359 + 2 C00080 gives C00282</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00068</entry>
+		<name>L-Ascorbate:oxygen oxidoreductase</name>
+		<definition>Oxygen + 2 Ascorbate gives 2 L-Dehydroascorbate + 2 H2O</definition>
+		<equation>C00007 + 2 C00072 gives 2 C05422 + 2 C00001</equation>
+		<comment></comment>
+		<orthology>KO: K00423 L-ascorbate oxidase</orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00069</entry>
+		<name></name>
+		<definition>2 Hydantoin-5-propionate gives Oxygen + 2 4-Imidazolone-5-propanoate</definition>
+		<equation>2 C05565 gives C00007 + 2 C03680</equation>
+		<comment></comment>
+		<orthology>KO: K00492</orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00070</entry>
+		<name></name>
+		<definition>2 D-Urobilinogen + Oxygen gives 2 D-Urobilin + 2 H2O</definition>
+		<equation>2 C05791 + C00007 gives 2 C05795 + 2 C00001</equation>
+		<comment>non enzymatic</comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00071</entry>
+		<name></name>
+		<definition>2 5-Hydroxy-2-polyprenylphenol gives Oxygen + 2 2-Polyprenylphenol</definition>
+		<equation>2 C05808 gives C00007 + 2 C05807</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00072</entry>
+		<name>Thiamin:oxygen 5-oxidoreductase</name>
+		<definition>Thiamine aldehyde + Oxygen + H2O gives H2O2 + Thiamin acetic acid</definition>
+		<equation>C05856 + C00007 + C00001 gives C00027 + C02892</equation>
+		<comment>see R02132Ref:1. Arch Biochem Biophys 1985; 239(1): 46-52</comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00073</entry>
+		<name>Prostaglandin H2:oxygen oxidoreductase</name>
+		<definition>2 Prostaglandin H2 + Oxygen gives 2 Prostaglandin G2</definition>
+		<equation>2 C00427 + C00007 gives 2 C05956</equation>
+		<comment></comment>
+		<orthology>KO: K00509 prostaglandin-endoperoxide synthase</orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00074</entry>
+		<name>2-Aminophenol:oxygen oxidoreductase</name>
+		<definition>3 Oxygen + 4 2-Aminophenol gives 6 H2O + 2 Isophenoxazine</definition>
+		<equation>3 C00007 + 4 C01987 gives 6 C00001 + 2 C02161</equation>
+		<comment>Ref:1. Biochim Biophys Acta 1965; 96: 318-327Ref:2. Arch Biochem Biophys 1967; 118: 388-394</comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+	<Reaction>
+		<entry>R00075</entry>
+		<name>S-adenosyl-L-methionine:S-adenosyl-L-methionine</name>
+		<definition>3 S-Adenosyl-L-methionine gives 3 5'-Methylthioadenosine +</definition>
+		<equation>3 C00019 gives 3 C00170 + C05324</equation>
+		<comment></comment>
+		<orthology></orthology>
+		<reference></reference>
+	</Reaction>
+</Source>	
