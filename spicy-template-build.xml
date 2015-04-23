@@ -132,7 +132,8 @@
                classpathref="compile.classpath" 
                debug="${build.debug}"
                debuglevel="${build.debuglevel}"
-               optimize="${build.optimize}">
+               optimize="${build.optimize}"
+               encoding="Cp1252">
                <compilerarg value="-Xlint:unchecked" />
         </javac>
     </target>
