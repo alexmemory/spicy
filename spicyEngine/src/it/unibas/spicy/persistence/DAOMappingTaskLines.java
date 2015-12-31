@@ -89,12 +89,13 @@ public class DAOMappingTaskLines {
             return mappingTask;
         } catch (Throwable ex) {
             logger.error(ex);
-//            ex.printStackTrace();
+            ex.printStackTrace();
             String message = "Unable to load mapping task from file : " + filePath;
             if (ex.getMessage() != null && !ex.getMessage().equals("NULL")) {
                 message += "\n" + ex.getMessage();
             }
-            throw new DAOException(message);
+            // throw new DAOException(message);
+            throw ex;
         }
     }
 

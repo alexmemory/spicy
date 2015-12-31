@@ -90,7 +90,8 @@ public class DAOXsd {
             instanceFiles.add(fileName);
         } catch (Throwable ex) {
             logger.error(ex);
-            throw new DAOException(ex.getMessage());
+            // throw new DAOException(ex.getMessage());
+            throw ex;
         }
     }
 

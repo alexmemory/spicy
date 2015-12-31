@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="jep" default="build">
+<project name="jep" default="build"
+	 xmlns:artifact="antlib:org.apache.maven.artifact.ant">
+
+  <target name="mvn-install" depends="jar"
+	  description="Install this version of JEP to the local Maven respository.">
+    <path id="maven-ant-tasks.classpath" path="../lib/maven-ant-tasks-2.1.3.jar" />
+    <typedef resource="org/apache/maven/artifact/ant/antlib.xml"
+             uri="antlib:org.apache.maven.artifact.ant"
+             classpathref="maven-ant-tasks.classpath" />
+    <artifact:pom id="jep-spicy-pom" file="pom.xml" />
+    <artifact:install file="dist/jep-2.4.1.jar">
+      <pom refid="jep-spicy-pom"/>
+    </artifact:install>
+  </target>
     
  <!-- ***************************************************
             Importazione del template

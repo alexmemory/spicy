@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="spicyEngine" default="build">
-    
+<project name="spicyEngine" default="build"
+	 xmlns:artifact="antlib:org.apache.maven.artifact.ant">
+
+  <target name="mvn-install" depends="jar"
+	  description="Install the spicyEngine jar to the local Maven respository.">
+    <path id="maven-ant-tasks.classpath" path="../lib/maven-ant-tasks-2.1.3.jar" />
+    <typedef resource="org/apache/maven/artifact/ant/antlib.xml"
+             uri="antlib:org.apache.maven.artifact.ant"
+             classpathref="maven-ant-tasks.classpath" />
+    <artifact:pom id="spicy-engine-pom" file="pom.xml" />
+    <artifact:install file="dist/spicyEngine-1.0.jar">
+      <pom refid="spicy-engine-pom"/>
+    </artifact:install>
+  </target>
+  
  <!-- ***************************************************
             Importazione del template
       *************************************************** -->
 
-    <import file="../spicy-template-build.xml" /> 
+    <import file="../spicy-template-build.xml" />
 	
     <property file="../common.properties" />
 
