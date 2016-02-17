@@ -283,17 +283,68 @@ public class FORule implements Cloneable, Comparable<FORule>, IIdentifiable {
         return result.toString();
     }
 
+    // protected String joinConditionString(String indent) {
+    //     StringBuilder result = new StringBuilder();
+    //     // TODO: don't include the whole source view...probably don't keep this method at all.
+    //     result.append(this.sourceView.toString(indent));
+    //     if (this.getTargetView().hasJoinConditions()) {
+    //         result.append(indent).append("where     \n");
+    //         for (VariableJoinCondition joinCondition : this.getTargetView().getJoinConditions()) {
+    //             result.append(indent).append(joinCondition.toStringWithSet()).append("\n");
+    //         }
+    //         for (VariableJoinCondition cyclicJoinCondition : this.getTargetView().getCyclicJoinConditions()) {
+    //             result.append(indent).append(cyclicJoinCondition.toStringWithSet()).append(" (cyclic)").append("\n");
+    //         }
+    //     }
+    //     return result.toString();
+    // }
+
     protected String joinConditionString(String indent) {
         StringBuilder result = new StringBuilder();
-        // TODO: don't include the whole source view...probably don't keep this method at all.
-        result.append(this.sourceView.toString(indent));
-        if (this.getTargetView().hasJoinConditions()) {
-            result.append(indent).append("where     \n");
-            for (VariableJoinCondition joinCondition : this.getTargetView().getJoinConditions()) {
-                result.append(indent).append(joinCondition.toStringWithSet()).append("\n");
+        // TODO This never sees the source join conditions.  Not the right way to get them?
+        if (!this.sourceView.getComplexQuery().getJoinConditions().isEmpty()) {
+            // System.out.println("There are source join conditions");
+            List<String> joinCondStrings = new ArrayList<String>();
+            for (VariableJoinCondition joinCondition : this.sourceView.getComplexQuery().getJoinConditions()) {
+                joinCondStrings.add(joinCondition.toStringWithSet());
             }
-            for (VariableJoinCondition cyclicJoinCondition : this.getTargetView().getCyclicJoinConditions()) {
-                result.append(indent).append(cyclicJoinCondition.toStringWithSet()).append(" (cyclic)").append("\n");
+            java.util.Collections.sort(joinCondStrings); // Sort so they are in a fixed order
+            // System.out.println("There are source join conditions: "+ joinCondStrings.size());
+            for (String joinCondString : joinCondStrings) {
+                result.append(indent).append(joinCondString).append("\n");
+            }
+
+            List<String> cycJoinCondStrings = new ArrayList<String>();
+            for (VariableJoinCondition joinCondition : this.sourceView.getComplexQuery().getCyclicJoinConditions()) {
+                cycJoinCondStrings.add(joinCondition.toStringWithSet());
+            }
+            java.util.Collections.sort(cycJoinCondStrings); // Sort so they are in a fixed order
+            // System.out.println("There are source cyclic join conditions: "+ cycJoinCondStrings.size());
+            for (String joinCondString : cycJoinCondStrings) {
+                result.append(indent).append(joinCondString).append("\n");
+            }
+        }
+
+        if (this.getTargetView().hasJoinConditions()) {
+            // System.out.println("There are target join conditions");
+            List<String> joinCondStrings = new ArrayList<String>();
+            for (VariableJoinCondition joinCondition : this.getTargetView().getJoinConditions()) {
+                joinCondStrings.add(joinCondition.toStringWithSet());
+            }
+            java.util.Collections.sort(joinCondStrings); // Sort so they are in a fixed order
+            // System.out.println("There are target join conditions: "+ joinCondStrings.size());
+            for (String joinCondString : joinCondStrings) {
+                result.append(indent).append(joinCondString).append("\n");
+            }
+
+            List<String> cycJoinCondStrings = new ArrayList<String>();
+            for (VariableJoinCondition joinCondition : this.getTargetView().getCyclicJoinConditions()) {
+                cycJoinCondStrings.add(joinCondition.toStringWithSet());
+            }
+            java.util.Collections.sort(cycJoinCondStrings); // Sort so they are in a fixed order
+            // System.out.println("There are target cyclic join conditions: "+ cycJoinCondStrings.size());
+            for (String joinCondString : cycJoinCondStrings) {
+                result.append(indent).append(joinCondString).append("\n");
             }
         }
         return result.toString();
@@ -344,8 +395,11 @@ public class FORule implements Cloneable, Comparable<FORule>, IIdentifiable {
         result.append("_");
         result.append(targetVariablesNames());
         result.append("_");
-        result.append(Math.abs((correspondenceString("")+
-                                joinConditionString("")).hashCode()));
+        // result.append(Math.abs((correspondenceString("")+
+        //                         joinConditionString("")).hashCode()));
+        result.append(Math.abs(correspondenceString("").hashCode()));
+        result.append("_");
+        result.append(Math.abs(joinConditionString("").hashCode()));
         return result.toString();
     }
 
