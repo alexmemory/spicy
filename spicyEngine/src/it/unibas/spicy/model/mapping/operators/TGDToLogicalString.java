@@ -130,7 +130,7 @@ public class TGDToLogicalString {
                 if (attributeVariable == null) {
                     attributeVariable = findExistentialVariable(attributePath, tgd.getExistentialFormulaVariables(mappingTask));
                 }
-                result.append(attributePath.getLastStep()).append(": ");
+                // result.append(attributePath.getLastStep()).append(": ");
                 Expression transformation = attributeVariable.getTransformationFunction(attributePath);
                 if (transformation == null) {
                     if (useSaveFormat) {
@@ -388,7 +388,7 @@ class TGDToStringVisitor implements IQueryVisitor {
             for (int j = 0; j < attributePaths.size(); j++) {
                 VariablePathExpression attributePath = attributePaths.get(j);
                 FormulaVariable attributeVariable = findVariableForPath(attributePath, variables);
-                localResult.append(attributePath.getLastStep()).append(": ");
+                // localResult.append(attributePath.getLastStep()).append(": ");
                 if (useSaveFormat) {
                     localResult.append("$");
                 }
