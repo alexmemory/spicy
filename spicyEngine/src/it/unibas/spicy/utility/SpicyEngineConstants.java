@@ -66,7 +66,7 @@ public class SpicyEngineConstants {
     public static final String REW_I = "REW_I";
     public static final String SUBSUMES = " subsumes ";
 
-    public static final String ALGEBRA_SEPARATOR = "§#§";
+    public static final String ALGEBRA_SEPARATOR = "?#?";
 
     public static final String LEAF = "LEAF";
 }
