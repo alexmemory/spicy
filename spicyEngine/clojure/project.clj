@@ -1,5 +1,6 @@
 (defproject org.clojars.alexmemory/clj-spicy "0.1.0"
   :description "Wrapper for ++Spicy. http://www.db.unibas.it/projects/spicy/"
+  :url "https://github.com/alexmemory/spicy"
   :dependencies [[org.clojure/clojure "1.7.0"]
 
                  [org.clojars.alexmemory/clj-util "0.1.0"]
