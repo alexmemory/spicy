@@ -1,8 +1,8 @@
-(defproject org.clojars.alexmemory/clj-spicy "0.1.0-SNAPSHOT"
+(defproject org.clojars.alexmemory/clj-spicy "0.1.0"
   :description "Wrapper for ++Spicy. http://www.db.unibas.it/projects/spicy/"
   :dependencies [[org.clojure/clojure "1.7.0"]
 
-                 [org.clojars.alexmemory/clj-util "0.1.0-SNAPSHOT"]
+                 [org.clojars.alexmemory/clj-util "0.1.0"]
                  [org.clojure/tools.logging "0.3.1"]
 
                  [commons-logging/commons-logging "1.1.3"]
@@ -10,7 +10,7 @@
                  [org.antlr/antlr "3.1.3"]
                  [org.apache.ibatis/ibatis-sqlmap "2.3.4.726"]
 
-                 [org.clojars.alexmemory/incanter-util "0.1.0-SNAPSHOT"]
+                 [org.clojars.alexmemory/incanter-util "0.1.0"]
                  [me.raynes/fs "1.4.6"] ; For globbing, etc.
 
                  [net.sf.saxon/Saxon-HE "9.5.1-8"]
