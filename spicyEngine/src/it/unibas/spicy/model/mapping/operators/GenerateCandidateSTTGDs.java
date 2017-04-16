@@ -61,15 +61,33 @@ public class GenerateCandidateSTTGDs {
         return normalizedTgds;
     }
 
-    private void addCoveredCorrespondences(List<FORule> tgds, MappingTask mappingTask) {
+    // private void addCoveredCorrespondences(List<FORule> tgds, MappingTask mappingTask) {
+    //     List<VariableCorrespondence> correspondences = mappingTask.getMappingData().getCorrespondences();
+    //     for (FORule tgd : tgds) {
+    //         for (VariableCorrespondence correspondence : correspondences) {
+    //             if (checkCoverage(tgd, correspondence)) {
+    //                 tgd.addCoveredCorrespondence(correspondence);
+    //             }
+    //         }
+    //     }
+    // }
+
+	private void addCoveredCorrespondences(List<FORule> tgds, MappingTask mappingTask) {
         List<VariableCorrespondence> correspondences = mappingTask.getMappingData().getCorrespondences();
+		List<FORule> toRemove = new ArrayList<FORule>();
         for (FORule tgd : tgds) {
-            for (VariableCorrespondence correspondence : correspondences) {
-                if (checkCoverage(tgd, correspondence)) {
-                    tgd.addCoveredCorrespondence(correspondence);
-                }
-            }
+			try{
+				for (VariableCorrespondence correspondence : correspondences) {
+					if (checkCoverage(tgd, correspondence)) {
+						tgd.addCoveredCorrespondence(correspondence);
+					}
+				}
+			} catch (it.unibas.spicy.model.exceptions.IllegalMappingTaskException e) {
+				toRemove.add(tgd);
+				logger.warn("Discarding tgd: "+tgd.toString());
+			}
         }
+		tgds.removeAll(toRemove);
     }
 
     public boolean checkCoverage(FORule tgd, VariableCorrespondence correspondence) {

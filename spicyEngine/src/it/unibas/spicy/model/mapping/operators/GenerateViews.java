@@ -51,6 +51,7 @@ public class GenerateViews {
     ////////////////////////      VIEW CONSTRUCTION      ///////////////////////////////////
 
     private List<SimpleConjunctiveQuery> constructViews(IDataSourceProxy dataSource) {
+        if (logger.isDebugEnabled()) logger.debug("\nJoin conditions:\n" + SpicyEngineUtility.printCollection(dataSource.getJoinConditions()));	  
         List<VariableJoinCondition> variableJoinConditions = contextualizeJoinConditions(dataSource);
         List<SimpleConjunctiveQuery> currentViews = initViews(dataSource);
         List<SimpleConjunctiveQuery> discardedViews = new ArrayList<SimpleConjunctiveQuery>();
