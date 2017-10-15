@@ -101,6 +101,18 @@
               (str pred "(" (cljs/join "," args) ")"))))] ; As a string
     (flatten tuples-by-rel)))
 
+(defn dsproxy-instance-to-tuples-by-pred
+  "Retrieve a set of tuples, grouped by pred, from a relational instance."
+  [inst]
+  (let [tuples-by-rel
+        (for [rel (.getChildren inst)]
+          (let [pred (.getLabel (first (.getChildren rel))) ; The predicate
+                tups                    ; Tuples of that relation
+                (for [tup (.getChildren rel)]
+                  (dsproxy-args-of-tuple tup))]
+            [pred tups]))] 
+    tuples-by-rel))
+
 (defn dsproxy-instance-to-tuples-with-pred
   "Retrieve a set of tuple-pred pairs from a relational instance."
   [inst]
@@ -125,6 +137,17 @@
     (if (= 0 (count instances))
       []
       (dsproxy-instance-to-tuples inst))))
+
+(defn dsproxy-to-tuples-by-pred
+  "Retrieve a set of tuples, by pred, from a relational data source proxy."
+  [dsproxy]
+  (let [instances (.getInstances dsproxy)
+        inst (first instances)]
+    (assert (>= 1 (count instances))
+            (str (count instances) " instances")) ; There is a single instance
+    (if (= 0 (count instances))
+      []
+      (dsproxy-instance-to-tuples-by-pred inst))))
 
 (defn dsproxy-to-tuples-with-pred
   "Retrieve a set of tuple-pred pairs from a relational data source proxy."
