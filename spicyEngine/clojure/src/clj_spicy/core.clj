@@ -135,8 +135,7 @@
             (str (count instances) " instances")) ; There is a single instance
     (if (= 0 (count instances))
       []
-      (dsproxy-instance-to-tuples-with-pred inst)
-      )))
+      (dsproxy-instance-to-tuples-with-pred inst))))
 
 (defn dsproxy-print
   "Print the contents of a Spicy data source proxy that are a relational
@@ -300,11 +299,17 @@
        (nthrest tps 2)])))
 
 (defn tgd-candidates-generate
-  "Generate candidate tgds"
-  [mapping-task]
-  (.generateCandidateTGDs
-   (it.unibas.spicy.model.mapping.operators.GenerateCandidateSTTGDs.)
-   mapping-task))
+  "Generate candidate st tgds.  By default, normalize the st tgds."
+  ([mapping-task]
+   (.generateCandidateTGDs
+    (it.unibas.spicy.model.mapping.operators.GenerateCandidateSTTGDs.)
+    mapping-task))
+  ([mapping-task normalize]
+   (if normalize
+     (tgd-candidates-generate mapping-task)
+     (.generateCandidateTGDsUnnormalized
+      (it.unibas.spicy.model.mapping.operators.GenerateCandidateSTTGDs.)
+      mapping-task))))
 
 (defn tgd-candidates-list-print
   "Print the candidate tgds in the mapping. Takes as a list of
