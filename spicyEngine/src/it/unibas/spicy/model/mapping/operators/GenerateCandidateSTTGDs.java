@@ -61,18 +61,35 @@ public class GenerateCandidateSTTGDs {
         return normalizedTgds;
     }
 
-    // private void addCoveredCorrespondences(List<FORule> tgds, MappingTask mappingTask) {
-    //     List<VariableCorrespondence> correspondences = mappingTask.getMappingData().getCorrespondences();
-    //     for (FORule tgd : tgds) {
-    //         for (VariableCorrespondence correspondence : correspondences) {
-    //             if (checkCoverage(tgd, correspondence)) {
-    //                 tgd.addCoveredCorrespondence(correspondence);
-    //             }
-    //         }
-    //     }
-    // }
+    public List<FORule> generateCandidateTGDsUnnormalized(MappingTask mappingTask) {
+        List<FORule> candidateTgds = new ArrayList<FORule>();
+        for (SimpleConjunctiveQuery sourceView : mappingTask.getSourceProxy().getMappingData().getViews()) {
+            for (SimpleConjunctiveQuery targetView : mappingTask.getTargetProxy().getMappingData().getViews()) {
+                FORule tgd = new FORule(sourceView, targetView);
+                candidateTgds.add(tgd);
+            }
+        }
+        addCoveredCorrespondences(candidateTgds, mappingTask);
+        if (logger.isDebugEnabled()) logger.debug("Candidate mappings before pruning: " + candidateTgds.size());
+        removeEmptyTGDs(candidateTgds);
+        if (logger.isDebugEnabled()) logger.debug("Candidate mappings after pruning: " + candidateTgds.size());
+        Collections.sort(candidateTgds);
+        return candidateTgds;
+    }
 
-	private void addCoveredCorrespondences(List<FORule> tgds, MappingTask mappingTask) {
+    private void addCoveredCorrespondences(List<FORule> tgds, MappingTask mappingTask) {
+        List<VariableCorrespondence> correspondences = mappingTask.getMappingData().getCorrespondences();
+        for (FORule tgd : tgds) {
+            for (VariableCorrespondence correspondence : correspondences) {
+                if (checkCoverage(tgd, correspondence)) {
+                    tgd.addCoveredCorrespondence(correspondence);
+                }
+            }
+        }
+    }
+
+	private void addCoveredCorrespondencesIgnoreExceptions(List<FORule> tgds, MappingTask mappingTask) {
+		// A version of addCoveredCorrespondences that removes st tgds in case of an exception.  This is useful if adding random correspondences.
         List<VariableCorrespondence> correspondences = mappingTask.getMappingData().getCorrespondences();
 		List<FORule> toRemove = new ArrayList<FORule>();
         for (FORule tgd : tgds) {
