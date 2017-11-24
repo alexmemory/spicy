@@ -105,7 +105,9 @@
   "Retrieve a set of tuples, grouped by pred, from a relational instance."
   [inst]
   (let [tuples-by-rel
-        (for [rel (.getChildren inst)]
+        (for [rel (.getChildren inst)
+              ;; Only relations having tuples
+              :when (not-empty (.getChildren rel))]
           (let [pred (.getLabel (first (.getChildren rel))) ; The predicate
                 tups                    ; Tuples of that relation
                 (for [tup (.getChildren rel)]
@@ -715,6 +717,7 @@
         vis (tgd-candidate-ground-head-to-query-visitor verbose)
         ti target-instance]
     ;; (u/println-center "instance" "_" 60)
+    ;; (u/dbg ti)
     (.accept ti vis)                  ; Traverse target instance
     (let [[vjcs vars vscs atts vars-info] (.getResult vis) ; Get results of visitor
           scq (SimpleConjunctiveQuery.) ; Initially empty
