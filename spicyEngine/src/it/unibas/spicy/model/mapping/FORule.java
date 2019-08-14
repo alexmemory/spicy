@@ -301,11 +301,16 @@ public class FORule implements Cloneable, Comparable<FORule>, IIdentifiable {
 
     protected String joinConditionString(String indent) {
         StringBuilder result = new StringBuilder();
-        // TODO This never sees the source join conditions.  Not the right way to get them?
-        if (!this.sourceView.getComplexQuery().getJoinConditions().isEmpty()) {
+
+		List<SimpleConjunctiveQuery> sourceSimpleQueries = this.sourceView.getComplexQuery().getConjunctions();
+		if (sourceSimpleQueries.size() > 1)
+			throw new RuntimeException("This implementation does not handle complex source queries with >1 conjunction.");
+		SimpleConjunctiveQuery sourceSimpleQuery = sourceSimpleQueries.get(0);
+
+        if (sourceSimpleQuery.hasJoinConditions()) {
             // System.out.println("There are source join conditions");
             List<String> joinCondStrings = new ArrayList<String>();
-            for (VariableJoinCondition joinCondition : this.sourceView.getComplexQuery().getJoinConditions()) {
+            for (VariableJoinCondition joinCondition : sourceSimpleQuery.getJoinConditions()) {
                 joinCondStrings.add(joinCondition.toStringWithSet());
             }
             java.util.Collections.sort(joinCondStrings); // Sort so they are in a fixed order
@@ -315,7 +320,7 @@ public class FORule implements Cloneable, Comparable<FORule>, IIdentifiable {
             }
 
             List<String> cycJoinCondStrings = new ArrayList<String>();
-            for (VariableJoinCondition joinCondition : this.sourceView.getComplexQuery().getCyclicJoinConditions()) {
+            for (VariableJoinCondition joinCondition : sourceSimpleQuery.getCyclicJoinConditions()) {
                 cycJoinCondStrings.add(joinCondition.toStringWithSet());
             }
             java.util.Collections.sort(cycJoinCondStrings); // Sort so they are in a fixed order
