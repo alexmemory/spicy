@@ -433,7 +433,7 @@
       (println
        (.toLogicalString t false mapping-task)
        ;; (.toSaveString t "" mapping-task)
-               ))))
+       ))))
 
 ;;; ====================================
 ;;; Data exchange, specialized
@@ -844,7 +844,11 @@
               candidate-tgds
               ;; [(first candidate-tgds)]
               ]
-          (let [ ;; Temporary MappingTask for one tgd
+
+          ;; (println (.toString tgd))
+          (let [rulid (.toShortString tgd)
+                
+                ;; Temporary MappingTask for one tgd
                 tmp-mt (mapping-task-load mapping-task-path)
 
                 ;; Target schema, for result
@@ -853,9 +857,21 @@
 
                 ;; List of groundings of the body of the tgd
                 [src-gnds src-inst-num head-generators]
-                (tgd-candidate-ground-body tmp-mt tgd)
+                (try
+                  (tgd-candidate-ground-body tmp-mt tgd)
+                  (catch java.lang.IllegalArgumentException err
+                    (if
+                        ;; No groundings?
+                        (let [cause-str (:cause (Throwable->map err))]
+                          (and (cljs/starts-with? cause-str "Unable to find ")
+                               (cljs/includes? cause-str "attributes for join ")))
 
-                rulid (.toShortString tgd)]
+                      ;; No groundings is ok; just return empty list
+                      (do (log/debugf "tgd::%s createsds:: ::no_groundings" rulid)
+                          [[] nil nil])
+
+                      ;; Else, throw
+                      (throw err))))]
             
             (log/infof "tgd::%s createsds:: ::starting" rulid)
             (log/infof "tgd::%s createsds:: ::groundings %d" rulid
