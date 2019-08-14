@@ -1,7 +1,7 @@
-(defproject org.clojars.alexmemory/clj-spicy "0.1.0"
+(defproject org.clojars.alexmemory/clj-spicy "0.1.1-SNAPSHOT"
   :description "Wrapper for ++Spicy. http://www.db.unibas.it/projects/spicy/"
   :url "https://github.com/alexmemory/spicy"
-  :dependencies [[org.clojure/clojure "1.7.0"]
+  :dependencies [[org.clojure/clojure "1.8.0"]
 
                  [org.clojars.alexmemory/clj-util "0.1.0"]
                  [org.clojure/tools.logging "0.3.1"]
@@ -25,3 +25,9 @@
                       ]
   :repositories [;; For saxon-xqj
                  ["WSO2" "http://dist.wso2.org/maven2/"]])
+
+;; never do this
+;; 20190814 with lein 2.8.1, a http repo here uses HTTP, which is no longer allowed.
+(require 'cemerick.pomegranate.aether)
+(cemerick.pomegranate.aether/register-wagon-factory!
+ "http" #(org.apache.maven.wagon.providers.http.HttpWagon.))
