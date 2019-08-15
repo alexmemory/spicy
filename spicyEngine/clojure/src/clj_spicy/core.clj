@@ -860,18 +860,20 @@
                 (try
                   (tgd-candidate-ground-body tmp-mt tgd)
                   (catch java.lang.IllegalArgumentException err
-                    (if
-                        ;; No groundings?
-                        (let [cause-str (:cause (Throwable->map err))]
+                    (let [cause-str (:cause (Throwable->map err))]
+                      (if
+                          ;; No groundings?
                           (and (cljs/starts-with? cause-str "Unable to find ")
-                               (cljs/includes? cause-str "attributes for join ")))
+                               (cljs/includes? cause-str "attributes for join "))
 
-                      ;; No groundings is ok; just return empty list
-                      (do (log/debugf "tgd::%s createsds:: ::no_groundings" rulid)
+                        ;; No groundings is ok; just return empty list
+                        (do
+                          (log/warnf "tgd::%s createsds:: ::no_groundings" rulid)
+                          (log/debug cause-str)
                           [[] nil nil])
 
-                      ;; Else, throw
-                      (throw err))))]
+                        ;; Else, throw
+                        (throw err)))))]
             
             (log/infof "tgd::%s createsds:: ::starting" rulid)
             (log/infof "tgd::%s createsds:: ::groundings %d" rulid
