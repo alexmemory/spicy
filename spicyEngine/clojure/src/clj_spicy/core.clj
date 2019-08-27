@@ -806,9 +806,11 @@
                             tgd tgt-inst mapping-task-tt-path)
 
         ;; TODO Add here only for tuples after query, or just copy from ttup/1?
-        post-query-creates (in/add-column
-                            :ac
-                            (repeat (in/nrow post-query-creates) 1) post-query-creates)
+        post-query-creates
+        (in/add-column
+         :ac
+         (repeat (in/nrow post-query-creates) 1) post-query-creates)
+
         post-query-creates
         (in/reorder-columns post-query-creates[:t :r :rel :ns :as :ac])
 
@@ -819,9 +821,12 @@
         (in/add-column :pq (repeat (in/nrow post-query-preds) 1) post-query-preds)
 
         ;; Column :ac indicating whether a target tuple is accepted
-        post-exchange-creates (in/$join [:rel :rel] post-query-preds post-exchange-creates)
-        post-exchange-creates (in/add-derived-column :ac [:pq] (fn [p] (if (nil? p) 0 1))
-                                                     post-exchange-creates)
+        post-exchange-creates
+        (in/$join [:rel :rel] post-query-preds post-exchange-creates)
+
+        post-exchange-creates
+        (in/add-derived-column :ac [:pq] (fn [p] (if (nil? p) 0 1))
+                               post-exchange-creates)
         post-exchange-creates (in/sel post-exchange-creates :except-cols :pq)
         post-exchange-creates
         (in/reorder-columns post-exchange-creates[:t :r :rel :ns :as :ac])
