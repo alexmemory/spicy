@@ -916,13 +916,14 @@
   used by PSL."
   ([dataset col-name]
    (let [old (in/sel dataset :cols col-name)
-         new (for [t old] (u/string-shortened-with-hash 
-                           t 
-                           ;; Amalgam causes error with 255, as of Jan
-                           ;; 2017?  Or is this an issue with a string
-                           ;; containing an apostrophe?
-                           ;; 200
-                           ))]
+         new (for [t (u/aseq old)]
+               (u/string-shortened-with-hash 
+                t 
+                ;; Amalgam causes error with 255, as of Jan
+                ;; 2017?  Or is this an issue with a string
+                ;; containing an apostrophe?
+                ;; 200
+                ))]
      (in/replace-column col-name new dataset)))
   ;; With default column name
   ([dataset] (dataset-with-shortened-tuples dataset :t)))
@@ -934,7 +935,7 @@
   database."
   ([dataset col-name]
    (let [old (in/sel dataset :cols col-name)
-         new (for [t old] (string-cleaned t))]
+         new (for [t (u/aseq old)] (string-cleaned t))]
      (in/replace-column col-name new dataset)))
   ;; With default column name
   ([dataset] (dataset-with-clean-string-tuples dataset :t)))
