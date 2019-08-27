@@ -878,7 +878,9 @@
                           [[] nil nil])
 
                         ;; Else, throw
-                        (throw err)))))]
+                        (do
+                          (log/errorf "Problem with tgd:\n %s" (str tgd))
+                          (throw err))))))]
             
             (log/infof "tgd::%s createsds:: ::starting" rulid)
             (log/infof "tgd::%s createsds:: ::groundings %d" rulid
@@ -889,11 +891,29 @@
                   ;; [(first src-gnds)]
                   ;; (take 3 src-gnds)
                   ]
-              (do 
-                ;; (u/dbgsym src-gnd)
+
+              (try
                 (tgd-candidates-src-gnd-to-creates-atoms 
                  mapping-task-tt-path tmp-mt tgt-sch tgd rulid 
-                 src-inst-num head-generators src-gnd)))))]
+                 src-inst-num head-generators src-gnd)
+                (catch java.lang.IllegalArgumentException err
+                  (let [cause-str (:cause (Throwable->map err))]
+                    (if
+                        ;; No groundings?
+                        (and (cljs/starts-with? cause-str "Unable to find ")
+                             (cljs/includes? cause-str "attribute: "))
+
+                      ;; No groundings is ok; just return empty list
+                      (do
+                        (log/warnf "tgd::%s createsds:: ::no_head_groundings"
+                                   rulid)
+                        (log/debug cause-str)
+                        [[] nil nil])
+
+                      ;; Else, throw
+                      (do
+                        (log/errorf "Problem with tgd:\n %s" (str tgd))
+                        (throw err)))))))))]
 
     ;; (u/dbgsym creates-dss)
     ;; Combine into a single table of creates info
