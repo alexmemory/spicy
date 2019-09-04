@@ -536,8 +536,9 @@
                                          abs-path
                                          (VariablePathExpression.)
                                          (SetAlias.))]
-                          (reset! vars (assoc @vars
-                                              var {:set-alias set-alias}))))
+                          (reset! vars
+                                  (assoc @vars
+                                         var {:set-alias set-alias}))))
                       s))]
           (when verbose
             (println "visitSetNode" var-name (str (:set-alias (get @vars var)))))
@@ -608,25 +609,28 @@
 
                   ;; Add a VJC every time it is true this OID seen previously
                   (when seen
-                    (let [first-vpe   ; VariablePathExpression of prev-seen OID
+                    (let [first-vpe ; VariablePathExpression of prev-seen OID
                           (:first-vpe (get @oids oid))
 
                           monodirectional false ; Join is bidirectional?
-                          mandatory true ; Join is mandatory?
+                          mandatory true        ; Join is mandatory?
                           from-oid first-vpe ; From attr where OID first seen
-                          to-oid vpe  ; ...to this attr
-                          vjc         ; The new join condition
+                          to-oid vpe         ; ...to this attr
+                          vjc                ; The new join condition
                           (VariableJoinCondition.
                            from-oid to-oid monodirectional mandatory)]
                       ;; Add new join condition to the list
                       (swap! vjcs conj vjc)))
 
-                  ;; Increment the number of NULLs seen
-                  ;; (swap! vars
-                  ;;        (fn [v]
-                  ;;          (let [new-count (inc (get-in v [var-node :ns] 0))]
-                  ;;            (assoc-in v [var-node :ns] new-count))))
-
+                  ;; Add to list of OIDs for this rel
+                  (swap!
+                   vars
+                   (fn [v]
+                     (let [new-list
+                           (conj (get-in v [var-node :oids] [])
+                                 oid)]
+                       (assoc-in v [var-node :oids] new-list))))
+                  
                   (str "(oid: " leaf ") "
                        (subs  (.getSkolemString leaf) 0 10) "..." vpe))
 
@@ -666,7 +670,8 @@
                           (.append leaf)
                           (.append "\"")
                           (.toString)
-                          (it.unibas.spicy.model.expressions.Expression.) ; JEP expression
+                          ;; JEP expression
+                          (it.unibas.spicy.model.expressions.Expression.) 
                           (VariableSelectionCondition.))
                       ]
 
@@ -707,31 +712,55 @@
       )))
 
 (defn tgd-candidate-ground-head-to-creates-table
-  "Given a per-grounding instance of the target schema based on some tgd, generate creates atoms
-  by converting the instance to a query then running that query on the full instance."
-  [tgd
-   target-instance
-   t-t-mapping-task-path]
-
+  "Given a per-grounding instance of the target schema based on some
+  tgd, generate creates atoms by converting the instance to a query
+  then running that query on the full instance."
+  [tgd target-instance t-t-mapping-task-path soft-nulls]
   (let [verbose false
         vis (tgd-candidate-ground-head-to-query-visitor verbose)
         ti target-instance]
     ;; (u/println-center "instance" "_" 60)
     ;; (u/dbg ti)
     (.accept ti vis)                  ; Traverse target instance
-    (let [[vjcs vars vscs atts vars-info] (.getResult vis) ; Get results of visitor
+    (let [[vjcs vars vscs atts vars-info]
+          (.getResult vis) ; Get results of visitor
           scq (SimpleConjunctiveQuery.) ; Initially empty
           scq-t (SimpleConjunctiveQuery.)  ; For the target query
-          var-info-ds (in/dataset [:rel :ns :as]
-                                  (for [[var info] (seq vars-info)]
-                                    [(-> var (.getChildren) first (.getLabel))
-                                     (:ns info 0) (:as info)]))
-          ]
-      ;; (u/dbg var-info-ds)
-      ;; (doseq [[var info] (seq vars-info)]
-      ;;   (println (.getLabel var) (:ns info))
-      ;;   )
-      ;; (u/dbg vars-info)
+
+          oid-null-vals                 ; OID to 1/(# of times it appears)
+          (let [oid-counts              ; OID to (# of times it appears)
+                (frequencies
+                 (reduce
+                  concat 
+                  (for [[var info] (seq vars-info)]
+                    (:oids info))))]
+            
+            (into (hash-map)
+                  (map #(let [nullv (/ 1 (second %))] [(first %) nullv])
+                       (seq oid-counts))))
+
+          var-info-ds
+          (in/dataset
+           [:rel :ns :as]
+           (for [[var info] (seq vars-info)]
+             (let [reln (-> var (.getChildren) first (.getLabel))
+                   natts (:as info)
+                   nnulls (:ns info 0)
+                   oids (:oids info)
+
+                   nnulls
+                   (if soft-nulls
+
+                     ;; Count OIDs as nulls, weighted by number of appearances
+                     (+ nnulls
+                        (reduce
+                         + (map oid-null-vals oids)))
+
+                     ;; Don't count OIDs as nulls
+                     nnulls)]
+
+               [reln nnulls natts])))]
+
       (doseq [var vars]
         ;; Add variable to the query
         (.addVariable scq var)
@@ -781,7 +810,8 @@
 (defn tgd-candidates-src-gnd-to-creates-atoms
   "Given a grounding of the body of a tgd on the source instance,
   create a table of creates atoms. "
-  [mapping-task-tt-path tmp-mt tgt-sch tgd rulid src-inst-num head-generators src-gnd]
+  [mapping-task-tt-path tmp-mt tgt-sch tgd rulid src-inst-num head-generators
+   src-gnd soft-nulls]
   (let [tgt-inst (tgd-candidate-ground-head
                   tmp-mt tgt-sch tgd src-gnd src-inst-num head-generators)
 
@@ -803,7 +833,7 @@
 
         ;; Create info after querying the target instance
         post-query-creates (tgd-candidate-ground-head-to-creates-table
-                            tgd tgt-inst mapping-task-tt-path)
+                            tgd tgt-inst mapping-task-tt-path soft-nulls)
 
         ;; TODO Add here only for tuples after query, or just copy from ttup/1?
         post-query-creates
@@ -834,15 +864,14 @@
         ;; Combine everything into a single table
         createsds (in/conj-rows
                    post-exchange-creates
-                   post-query-creates)
-        ]
+                   post-query-creates)]
     createsds))
 
 (defn tgd-candidates-creates-info-table
   "Given a list of candidate tgds, calculate a table of information
   about what tuples they generate.  This information is sufficient to
   ground soft creates/2 and 'generous' accepted/1 atoms."
-  [candidate-tgds mapping-task-path mapping-task-tt-path]  
+  [candidate-tgds mapping-task-path mapping-task-tt-path soft-nulls]  
   (let [creates-dss
         ;; A table of creates info for each grounding of each tgd
         (for [tgd
@@ -882,9 +911,9 @@
                           (log/errorf "Problem with tgd:\n %s" (str tgd))
                           (throw err))))))]
             
-            (log/infof "tgd::%s createsds:: ::starting" rulid)
-            (log/infof "tgd::%s createsds:: ::groundings %d" rulid
-                       (count src-gnds))
+            (log/debugf "tgd::%s createsds:: ::starting" rulid)
+            (log/debugf "tgd::%s createsds:: ::groundings %d" rulid
+                        (count src-gnds))
             ;; A table of creates atoms for each grounding of the tgd body
             (for [src-gnd
                   src-gnds
@@ -895,7 +924,7 @@
               (try
                 (tgd-candidates-src-gnd-to-creates-atoms 
                  mapping-task-tt-path tmp-mt tgt-sch tgd rulid 
-                 src-inst-num head-generators src-gnd)
+                 src-inst-num head-generators src-gnd soft-nulls)
                 (catch java.lang.IllegalArgumentException err
                   (let [cause-str (:cause (Throwable->map err))]
                     (if
